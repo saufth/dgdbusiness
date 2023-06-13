@@ -36,7 +36,7 @@ export default function Footer () {
             <LinkEmail />
           </div>
           <div className='grid place-content-center lg:hidden'>
-            <LinkToContact />
+            <LinkToContact theme={THEMES.secondary} />
           </div>
         </div>
       </div>
