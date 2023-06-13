@@ -3,7 +3,7 @@ import LinkToContact from '@/components/navigation/LinkToContact'
 import NextLink from 'next/link'
 import Showcase from '@/components/data-display/Showcase'
 // Config
-import { APP_ROUTES, CONTACT_NAV } from '@/modules/navigation/config'
+import { APP_ROUTES, ABOUT_NAV, CONTACT_NAV } from '@/modules/navigation/config'
 import { IMG_EXT, PICTURES_SIZE, LOGO_TYPES } from '@/modules/data-display/config'
 import { SOLUTIONS, description, organizationAlt } from '@/modules/app/config'
 // Types
@@ -140,6 +140,7 @@ export default function HomePage () {
             alt: organizationAlt,
             ...PICTURES_SIZE
           }}
+          href={ABOUT_NAV.href}
         />
         <Showcase
           heading='Nuesta visión'
@@ -150,7 +151,7 @@ export default function HomePage () {
             alt: organizationAlt,
             ...PICTURES_SIZE
           }}
-          href={`/${APP_ROUTES.about}`}
+          href={ABOUT_NAV.href}
           reverse
         />
       </section>
