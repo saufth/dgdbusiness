@@ -3,7 +3,6 @@ import Link from '../navigation/core/Link'
 import LinkEmail from '../navigation/LinkEmail'
 import LinkLogo from '../navigation/core/LinkLogo'
 import LinkToContact from '../navigation/LinkToContact'
-import NextLink from 'next/link'
 // Config
 import { NAV_LIST, navAriaLabel } from '@/modules/navigation/config'
 import { organization } from '@/modules/app/config'
@@ -17,9 +16,7 @@ export default function Footer () {
       <div className='px-section'>
         <div className='max-w-8xl py-16 mx-auto flex flex-col lg:flex-row justify-between gap-y-8'>
           <div className='lg:w-[232px] grid lg:block place-content-center'>
-            <NextLink href={NAV_LIST[0].href}>
-              <LinkLogo theme={THEMES.secondary} />
-            </NextLink>
+            <LinkLogo theme={THEMES.secondary} />
           </div>
           <nav aria-label={navAriaLabel}>
             <ul className='w-full flex flex-col lg:flex-row gap-y-4 lg:gap-x-6 text-center'>

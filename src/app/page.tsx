@@ -1,15 +1,15 @@
 // Components
 import LinkToContact from '@/components/navigation/LinkToContact'
+import Logo from '@/components/data-display/core/Logo'
 import NextLink from 'next/link'
 import Showcase from '@/components/data-display/Showcase'
 // Config
-import { APP_ROUTES, ABOUT_NAV, CONTACT_NAV } from '@/modules/navigation/config'
+import { APP_ROUTES, ABOUT_NAV, CONTACT_NAV, SOLUTIONS_NAV } from '@/modules/navigation/config'
 import { IMG_EXT, PICTURES_SIZE, LOGO_TYPES } from '@/modules/data-display/config'
 import { SOLUTIONS, description, organizationAlt } from '@/modules/app/config'
+import { SIZES } from '@/modules/sizing/config'
 // Types
 import type { HeaderProps } from '@/types/data-dislay'
-import Logo from '@/components/data-display/core/Logo'
-import { SIZES } from '@/modules/sizing/config'
 
 /** The headers configuration for solutions section */
 const SOLUTIONS_HEADERS: ReadonlyArray<HeaderProps> = [
@@ -79,9 +79,9 @@ export default function HomePage () {
             <div className='w-32 h-full pb-section hidden md:flex justify-center items-end bg-primary'>
               <NextLink
                 className='pb-6 hidden md:flex items-center gap-x-4 rotate-90'
-                href={`/#${APP_ROUTES.solutions}`}
+                href={SOLUTIONS_NAV.href}
               >
-                Soluciones <div className='w-64 h-px bg-black' />
+                {SOLUTIONS_NAV.children} <div className='w-64 h-px bg-black' />
               </NextLink>
             </div>
           </div>

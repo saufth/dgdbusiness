@@ -26,7 +26,7 @@ export const ABOUT_NAV: Readonly<Navigable> = {
 /** The solutions page navigation configuration */
 export const SOLUTIONS_NAV: Readonly<Navigable> = {
   children: 'Soluciones',
-  href: `/${APP_ROUTES.solutions}`
+  href: `/#${APP_ROUTES.solutions}`
 }
 
 /** The contact page navigation configuration */
