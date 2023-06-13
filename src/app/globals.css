@@ -32,7 +32,7 @@
   }
 
   h1 {
-    @apply font-primary text-6xl md:text-8xl leading-tight md:leading-tight;
+    @apply font-primary text-5xl md:text-8xl leading-tight md:leading-tight;
   }
 
   h2 {

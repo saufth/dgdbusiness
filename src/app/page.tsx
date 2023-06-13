@@ -51,7 +51,7 @@ export default function HomePage () {
                 <h1>
                   {description}
                 </h1>
-                <p className='text-2xl md:text-3xl md:leading-snug'>
+                <p className='text-xl md:text-3xl md:leading-snug'>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ea pariatur
                   autem iusto nam ad quae nostrum incidunt.
                 </p>
