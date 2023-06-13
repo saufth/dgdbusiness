@@ -76,7 +76,7 @@ export default function HomePage () {
                 </video>
               </div>
             </div>
-            <div className='w-32 h-full pb-section flex justify-center items-end bg-primary'>
+            <div className='w-32 h-full pb-section hidden md:flex justify-center items-end bg-primary'>
               <NextLink
                 className='pb-6 hidden md:flex items-center gap-x-4 rotate-90'
                 href={`/#${APP_ROUTES.solutions}`}
