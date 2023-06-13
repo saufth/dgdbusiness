@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg148"
+   width="511.95282"
+   height="512"
+   viewBox="0 0 511.95281 512"
+   sodipodi:docname="MANUAL CORPORATIVO DGD B (1).pdf"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs152">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath180">
+      <path
+         d="M 0,1080 H 1413.02 V 0 H 0 Z"
+         id="path178" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="namedview150"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     showgrid="false" />
+  <g
+     id="g156"
+     inkscape:groupmode="layer"
+     inkscape:label="Page 1"
+     transform="matrix(1.3333333,0,0,-1.3333333,-847.64803,988.71729)">
+    <g
+       id="g8198"
+       transform="matrix(2.7192772,0,0,2.7192772,-1093.0064,-1274.9094)">
+      <path
+         d="M 643.636,608.224 H 769.038 V 733.64 H 643.636 Z m 133.301,-7.9 H 635.736 v 141.214 h 141.201 z"
+         style="fill:#f9b100;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="path172" />
+      <g
+         id="g174">
+        <g
+           id="g176"
+           clip-path="url(#clipPath180)">
+          <g
+             id="g182"
+             transform="translate(667.8545,711.3354)">
+            <path
+               d="m 0,0 c -1.103,0 -2.035,-0.932 -2.035,-2.035 v -49.838 c 0,-1.102 0.932,-2.035 2.035,-2.035 h 50.18 c 1.103,0 2.035,0.933 2.035,2.035 V -2.035 C 52.215,-0.932 51.283,0 50.18,0 Z M 50.18,-61.807 H 0 c -5.478,0 -9.935,4.456 -9.935,9.934 v 49.838 c 0,5.478 4.457,9.934 9.935,9.934 h 50.18 c 5.477,0 9.934,-4.456 9.934,-9.934 v -49.838 c 0,-5.478 -4.457,-9.934 -9.934,-9.934"
+               style="fill:#f9b100;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               id="path184" />
+          </g>
+          <g
+             id="g186"
+             transform="translate(695.085,684.2046)">
+            <path
+               d="m 0,0 c -1.103,0 -2.035,-0.932 -2.035,-2.035 v -49.838 c 0,-1.102 0.932,-2.034 2.035,-2.034 h 50.18 c 1.103,0 2.035,0.932 2.035,2.034 V -2.035 C 52.215,-0.932 51.283,0 50.18,0 Z M 50.18,-61.807 H 0 c -5.478,0 -9.935,4.456 -9.935,9.934 v 49.838 c 0,5.478 4.457,9.934 9.935,9.934 h 50.18 c 5.477,0 9.934,-4.456 9.934,-9.934 v -49.838 c 0,-5.478 -4.457,-9.934 -9.934,-9.934"
+               style="fill:#f9b100;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               id="path188" />
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
