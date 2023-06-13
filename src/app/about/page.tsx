@@ -80,14 +80,14 @@ export default function AboutPage () {
         })}
       </section>
 
-      <section className='px-section md:px-11% py-section space-y-8 md:space-y-12 text-center bg-stone-50'>
+      <section className='px-section md:px-11% py-section space-y-8 text-center bg-stone-50'>
         <header className='space-y-5 md:space-y-8'>
           <h2>
             NUESTRA HISTORIA
           </h2>
         </header>
 
-        <div className='space-y-3 md:space-y-5 text-2xl md:text-3xl'>
+        <div className='space-y-6 text-xl md:text-4xl'>
           <p>
             Hace 15 años, un grupo de profesionales del mundo de los negocios decidió
             unir fuerzas y fundar DGD Business Group. Desde entonces, la empresa ha
