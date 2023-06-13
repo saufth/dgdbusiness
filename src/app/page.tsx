@@ -92,7 +92,7 @@ export default function HomePage () {
         id={APP_ROUTES.solutions}
         className='p-section space-y-12 lg:space-y-24'
       >
-        <header className='space-y-8 text-center'>
+        <header className='space-y-12 text-center'>
           <h2>
             Utilizamos enfoques analíticos y creativos para identificar soluciones
             innovadoras que impulsen el crecimiento, mejoren la eficiencia operativa
