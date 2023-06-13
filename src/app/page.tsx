@@ -90,9 +90,9 @@ export default function HomePage () {
 
       <section
         id={APP_ROUTES.solutions}
-        className='p-section space-y-12 lg:space-y-24'
+        className='p-section space-y-24'
       >
-        <header className='space-y-12 text-center'>
+        <header className='text-center'>
           <h2>
             Utilizamos enfoques analíticos y creativos para identificar soluciones
             innovadoras que impulsen el crecimiento, mejoren la eficiencia operativa
@@ -119,7 +119,7 @@ export default function HomePage () {
         })}
       </section>
 
-      <section className='p-section space-y-12 lg:space-y-24 bg-stone-50'>
+      <section className='p-section space-y-24 bg-stone-50'>
         <header className='flex flex-col items-center gap-y-10'>
           <Logo
             type={LOGO_TYPES.logomark}
