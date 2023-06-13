@@ -31,11 +31,11 @@ const SOLUTIONS_HEADERS: ReadonlyArray<HeaderProps> = [
   },
   {
     heading: SOLUTIONS[4],
-    description: 'Hoy más que nunca, el recurso humano de calidad y confiable es una de las variables más críticas para el éxito de las empresas. Como empresarios con visión, debemos de aspirar a crecer de adentro hacia afuera, y qué mejor que empezar con tu propio capital humano.'
+    description: 'Hoy más que nunca, el recurso humano de calidad y confiable, es una de las variables más críticas para el éxito de las empresas. Como empresarios con visión, debemos de aspirar a crecer de adentro hacia afuera, y qué mejor que empezar con tu propio capital humano.'
   },
   {
-    heading: SOLUTIONS[2],
-    description: 'El éxito a corto, mediano y largo plazo no sucede por accidente, es el resultado de unir la oportunidad con la estrategia y táctica correcta. En un mundo tan globalizado y competitivo es indispensable el tener claro cuándo y hasta dónde debes comprometerte a un proyecto.'
+    heading: SOLUTIONS[5],
+    description: 'El éxito a corto, mediano y largo plazo no sucede por accidente, es el resultado de unir la oportunidad con la estrategia y táctica correctas. En un mundo tan globalizado y competitivo es indispensable el tener claro cuándo y hasta dónde debes comprometerte a un proyecto.'
   }
 ]
 
@@ -128,14 +128,14 @@ export default function HomePage () {
           <h2 className='text-center'>
             Nos enorgullece ser reconocidos por nuestra ética de trabajo,
             profesionalismo y compromiso con la mejora continua en todos
-            los aspectos de nuestra labor
+            los aspectos de nuestra labor.
           </h2>
         </header>
         <Showcase
           heading='Nuesta misión'
           description='Aportarte valor como cliente. Te acompañamos en el mundo de los negocios para que logres el éxito de manera sostenible. Trabajamos de cerca contigo, comprendiendo tus necesidades y metas particulares, y luego creamos estrategias a tu medida para alcanzar al máximo tu potencial.'
           image={{
-            name: 'solutions0',
+            name: 'mision',
             ext: IMG_EXT.jpg,
             alt: organizationAlt,
             ...PICTURES_SIZE
@@ -145,7 +145,7 @@ export default function HomePage () {
           heading='Nuesta visión'
           description='Convertirnos en la Consultoría de negocios, reconocida por nuestra dedicación a la calidad, la excelencia y la innovación. Nos esforzamos por mantenernos a la vanguardia de las últimas tendencias del mercado y la tecnología, para así poder ofrecerte alternativas efectivas que te permitan mejorar tu rendimiento empresarial y puedas así, destacarte en la industria.'
           image={{
-            name: 'solutions1',
+            name: 'vision',
             ext: IMG_EXT.jpg,
             alt: organizationAlt,
             ...PICTURES_SIZE
