@@ -41,13 +41,11 @@ export default function Showcase ({
             ))}
         </div>
         <div className='flex justify-center md:block'>
-          {href && (href !== CONTACT_NAV.href)
-            ? (
-              <LinkButton href={href}>
-                Saber más
-              </LinkButton>
-              )
-            : <LinkToContact />}
+          {href
+            ? href !== CONTACT_NAV.href
+              ? <LinkButton href={href}>Saber más</LinkButton>
+              : <LinkToContact />
+            : null}
         </div>
       </header>
       <Image
