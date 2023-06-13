@@ -43,7 +43,7 @@ const SOLUTIONS_HEADERS: ReadonlyArray<HeaderProps> = [
 export default function HomePage () {
   return (
     <main>
-      <section className='h-3xl md:h-2xl'>
+      <section className='h-2xl'>
         <div className='h-full'>
           <div className='w-full h-full md:flex'>
             <div className='w-full h-full px-6 md:pb-12 mx-auto relative grid place-content-center bg-black/20'>
