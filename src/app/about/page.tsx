@@ -4,7 +4,7 @@ import Showcase from '@/components/data-display/Showcase'
 // Config
 import { APP_ROUTES } from '@/modules/navigation/config'
 import { picturesPath, IMG_EXT, PICTURES_SIZE } from '@/modules/data-display/config'
-import { organization, purpose } from '@/modules/app/config'
+import { organization } from '@/modules/app/config'
 // Types
 import type { HeaderProps } from '@/types/data-dislay'
 
@@ -65,9 +65,6 @@ const STRATEGY: Readonly<Record<string, HeaderProps>> = {
   }
 }
 
-/** The about route id */
-const aboutID = APP_ROUTES[1]
-
 /** The about us page of the application */
 export default function AboutPage () {
   return (
@@ -78,7 +75,7 @@ export default function AboutPage () {
           de un solo aspecto, sino de la sincronización de muchos.
         </h1>
         <Image
-          src={`${picturesPath}${aboutID}.${IMG_EXT.jpg}`}
+          src={`${picturesPath}${APP_ROUTES.about}.${IMG_EXT.jpg}`}
           alt={organization}
           className='w-full h-auto rounded-3xl'
           width={PICTURES_SIZE.width}
@@ -122,7 +119,7 @@ export default function AboutPage () {
             NUESTRA RAZÓN DE SER
           </h2>
           <p className='h2'>
-            {purpose}
+            LOL
           </p>
         </header>
 
