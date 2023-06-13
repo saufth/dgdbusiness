@@ -169,7 +169,7 @@
   /* Input */
 
   .btn {
-    @apply max-w-fit px-8 py-5 font-secondary-bold text-center leading-none whitespace-nowrap rounded-sm;
+    @apply max-w-fit px-8 py-5 font-secondary-bold text-lg text-center leading-none whitespace-nowrap rounded-sm;
   }
 
   .btn__primary {
