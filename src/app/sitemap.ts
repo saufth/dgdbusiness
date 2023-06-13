@@ -12,11 +12,11 @@ export default function sitemap () : MetadataRoute.Sitemap {
       lastModified: new Date()
     },
     {
-      url: `${baseUrl.host}${APP_ROUTES[4]}`,
+      url: `${baseUrl.host}${APP_ROUTES.about}`,
       lastModified: new Date()
     },
     {
-      url: `${baseUrl.host}${APP_ROUTES[5]}`,
+      url: `${baseUrl.host}${APP_ROUTES.contact}`,
       lastModified: new Date()
     }
   ]
