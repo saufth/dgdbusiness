@@ -6,7 +6,7 @@ import Showcase from '@/components/data-display/Showcase'
 // Config
 import { APP_ROUTES, ABOUT_NAV, CONTACT_NAV, SOLUTIONS_NAV } from '@/modules/navigation/config'
 import { IMG_EXT, PICTURES_SIZE, LOGO_TYPES } from '@/modules/data-display/config'
-import { SOLUTIONS, description, organizationAlt } from '@/modules/app/config'
+import { SOLUTIONS, description, organization } from '@/modules/app/config'
 import { SIZES } from '@/modules/sizing/config'
 // Types
 import type { HeaderProps } from '@/types/data-dislay'
@@ -48,6 +48,9 @@ export default function HomePage () {
           <div className='w-full h-full md:flex'>
             <div className='w-full h-full px-6 md:pb-12 mx-auto relative grid place-content-center bg-black/20'>
               <div className='text-center text-white space-y-6'>
+                <p className='text-xl md:text-2xl text-white'>
+                  {organization}
+                </p>
                 <h1>
                   {description}
                 </h1>
@@ -134,7 +137,7 @@ export default function HomePage () {
           image={{
             name: 'mision',
             ext: IMG_EXT.jpg,
-            alt: organizationAlt,
+            alt: organization,
             ...PICTURES_SIZE
           }}
           href={ABOUT_NAV.href}
@@ -145,7 +148,7 @@ export default function HomePage () {
           image={{
             name: 'vision',
             ext: IMG_EXT.jpg,
-            alt: organizationAlt,
+            alt: organization,
             ...PICTURES_SIZE
           }}
           href={ABOUT_NAV.href}

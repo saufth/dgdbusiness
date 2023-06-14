@@ -17,13 +17,7 @@ export const authors: Author = {
 }
 
 /** The name of the organization */
-export const organization = 'DGD'
-
-/** The alternative name of the organization */
-export const organizationAlt = 'Business Group'
-
-/** The head title of the application */
-export const organizationTitle = `${organization} – ${organizationAlt}`
+export const organization = 'DGD Business Group'
 
 /** The organization description */
 export const description = 'Tu empresa a su máxima expresión de productividad'
