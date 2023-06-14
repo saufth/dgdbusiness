@@ -101,7 +101,7 @@ export default function AboutPage () {
             industria con bases sólidas, efectivas y sostenibles.
           </p>
           <p>
-            DGD Bussines Group es un referente en el mundo de la Consultoría de negocios
+            DGD Business Group es un referente en el mundo de la consultoría de negocios
             que trabaja en pro de sus clientes, adaptando sus servicios a las necesidades
             apremiantes de los mismos.
           </p>

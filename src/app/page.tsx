@@ -51,10 +51,6 @@ export default function HomePage () {
                 <h1>
                   {description}
                 </h1>
-                <p className='text-xl md:text-3xl md:leading-snug'>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ea pariatur
-                  autem iusto nam ad quae nostrum incidunt.
-                </p>
                 <div className='pt-4 flex justify-center'>
                   <LinkToContact />
                 </div>
@@ -92,7 +88,8 @@ export default function HomePage () {
         id={APP_ROUTES.solutions}
         className='p-section space-y-24'
       >
-        <header className='text-center'>
+        <header className='text-center space-y-6'>
+          <p className='text-tagline'>NUESTRAS SOLUCIONES</p>
           <h2>
             Utilizamos enfoques analíticos y creativos para identificar soluciones
             innovadoras que impulsen el crecimiento, mejoren la eficiencia operativa
