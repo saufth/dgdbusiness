@@ -131,6 +131,7 @@ export default function HomePage () {
             los aspectos de nuestra labor.
           </h2>
         </header>
+
         <Showcase
           heading='Nuesta misión'
           description='Aportarte valor como cliente. Te acompañamos en el mundo de los negocios para que logres el éxito de manera sostenible. Trabajamos de cerca contigo, comprendiendo tus necesidades y metas particulares, y luego creamos estrategias a tu medida para alcanzar al máximo tu potencial.'
