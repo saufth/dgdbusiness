@@ -27,15 +27,15 @@ const SOLUTIONS_HEADERS: ReadonlyArray<HeaderProps> = [
   },
   {
     heading: SOLUTIONS[3],
-    description: 'Nuestras empresas son un reflejo de nosotros mismos. Tener claro en dónde estás parado y a dónde vas como individuo, como parte de una familia, como amigo, como profesionista, son algunos de los aspectos que hay que tener claramente identificados si quieres generar cambios de raíz tu empresa, cambios que perduren a través del tiempo.'
+    description: 'Nuestras empresas son un reflejo de nosotros mismos. Tener claro en dónde estás parado y a dónde vas como individuo, como parte de una familia, como amigo, como profesionista, son algunos de los aspectos que hay que tener claramente identificados si quieres generar cambios de raíz en tu empresa, cambios que perduren a través del tiempo.'
   },
   {
     heading: SOLUTIONS[4],
-    description: 'Hoy más que nunca, el recurso humano de calidad y confiable, es una de las variables más críticas para el éxito de las empresas. Como empresarios con visión, debemos de aspirar a crecer de adentro hacia afuera, y qué mejor que empezar con tu propio capital humano.'
+    description: 'Hoy más que nunca, el recurso humano de calidad y confiable, es una de las variables más críticas para el éxito de las empresas. Como empresarios con visión, debemos aspirar a crecer de adentro hacia afuera, y qué mejor que empezar con tu propio capital humano.'
   },
   {
     heading: SOLUTIONS[5],
-    description: 'El éxito a corto, mediano y largo plazo no sucede por accidente, es el resultado de unir la oportunidad con la estrategia y táctica correctas. En un mundo tan globalizado y competitivo es indispensable el tener claro cuándo y hasta dónde debes comprometerte a un proyecto.'
+    description: 'El éxito a corto, mediano y largo plazo no sucede por accidente, es el resultado de unir la oportunidad con la estrategia y táctica correctas. En un mundo tan globalizado y competitivo, es indispensable el tener claro cuándo y hasta dónde debes comprometerte a un proyecto.'
   }
 ]
 

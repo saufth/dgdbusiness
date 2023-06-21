@@ -33,7 +33,7 @@ const VALUES: ReadonlyArray<HeaderProps> = [
   },
   {
     heading: 'Aprendizaje continuo',
-    description: 'Nos esforzamos por mantenernos actualizados y mejorar constantemente para brindarte mejores servicios.'
+    description: 'Nos esforzamos por mantenernos actualizados y progresar constantemente para brindarte mejores servicios.'
   }
 ]
 
@@ -97,7 +97,7 @@ export default function AboutPage () {
           <p>
             DGD Business Group ha experimentado un crecimiento continuo, gracias a su
             compromiso con la entrega de soluciones empresariales. La compañía ha
-            ampliado sus áreas de especialización y hoy por hoy se ha expandido en la
+            ampliado sus áreas de especialización y, hoy por hoy, se ha expandido en la
             industria con bases sólidas, efectivas y sostenibles.
           </p>
           <p>
