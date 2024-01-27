@@ -1,5 +1,4 @@
 import ContactForm from '@/components/forms/contact-form'
-import Balancer from 'react-wrap-balancer'
 import { type Metadata } from 'next'
 import { siteConfig } from '@/config/site'
 
@@ -15,10 +14,8 @@ export default function ContactPage () {
       <section className='px pt-8 sm:pt-24 2xl:pb-28'>
         <div className='container sm:px-0 space-y-12 sm:space-y-16'>
           <div className='space-y-10 sm:space-y-12'>
-            <h2>
-              <Balancer className='text-h2 font-primary text-center w-full'>
-                Pongámonos en contacto
-              </Balancer>
+            <h2 className='text-h2 font-primary text-center w-full'>
+              Pongámonos en contacto
             </h2>
           </div>
           <div className='w-full flex justify-center'>
