@@ -21,9 +21,14 @@ export default function IndexPage () {
             <div className='space-y-5 md:space-y-6 text-center md:text-left md:pr-4'>
               <h1>
                 <Balancer className='text-h1'>
-                  {siteConfig.description}
+                  {siteConfig.slogan}
                 </Balancer>
               </h1>
+              <p>
+                <Balancer className='text-p1'>
+                  {siteConfig.description}
+                </Balancer>
+              </p>
             </div>
             <div className='flex gap-y-4 md:gap-x-8 items-center flex-col md:flex-row'>
               <Button size='full' asChild>
