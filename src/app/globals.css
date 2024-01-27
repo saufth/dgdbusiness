@@ -3,180 +3,109 @@
 @tailwind utilities;
 
 @layer base {
-  html,
-  body {
-    @apply max-w-screen overflow-x-hidden overscroll-y-none !scroll-smooth;
+  :root {
+    --background: 100% 0 0; /* #FFFFFF */
+    --foreground: 0% 0 0; /* #000000 */
+    --card: 99.47% 0.0045028269124313515 78.2985522745648; /* #FFFDFA */
+    --card-foreground: 0% 0 0; /* #000000 */
+    --popover: 99.47% 0.0045028269124313515 78.2985522745648; /* #FFFDFA */
+    --popover-foreground: 0% 0 0; /* #000000 */
+    --primary: 70.44% 0.14769695776660396 76.44004299305789; /* #D39100 */
+    --primary-foreground: 0% 0 0; /* #000000 */
+    --secondary: 0% 0 0; /* #000000 */
+    --secondary-foreground: 100% 0 0; /* #FFFFFF */
+    --muted: 97.68% 0.005 78.3; /* #F9F7F4 */
+    --muted-foreground: 46.97% 0.009 73.65; /* #5E5A55 */
+    --accent: 80.76% 0.16767993070533913 79.16702621244113; /* #F9B100 */
+    --accent-foreground: 0% 0 0; /* #000000 */
+    --destructive: 94.79% 0.03 351.51; /* #FFE6F0 */
+    --destructive-foreground: 52.22% 0.198 10; /* #BF174F */
+    --border: 92.37% 0.004 56.37; /* #E8E5E3 */
+    --input: 100% 0 0; /* #FFFFFF */
+    --ring: 83.83% 0.151 83.35; /* #F9C041 */
+    --radius: 0.5rem; /* 8px */
   }
 
-  body {
-    @apply font-secondary-regular text-black bg-white antialiased;
-    text-rendering: optimizeLegibility;
+  .dark {
+    --background: 0% 0 0; /* #000000 */
+    --foreground: 100% 0 0; /* #FFFFFF */
+    --card: 8.47% 0 0; /* #020202 */
+    --card-foreground: 100% 0 0; /* #FFFFFF */
+    --popover: 8.47% 0 0; /* #020202 */
+    --popover-foreground: 100% 0 0; /* #FFFFFF */
+    --primary: 67.92% 0.144 73.84; /* #CC8800 */
+    --primary-foreground: 0% 0 0; /* #000000 */
+    --secondary: 100% 0 0; /* #FFFFFF */
+    --secondary-foreground: 0% 0 0; /* #000000 */
+    --muted: 11.49% 0 0; /* #050505 */
+    --muted-foreground: 83.01% 0.006 84.57; /* #C9C7C3 */
+    --accent: 77% 0.161 76.79; /* #EDA400 */
+    --accent-foreground: 0% 0 0; /* #000000 */
+    --destructive: 22.71% 0.047 355.75; /* #2D121D */
+    --destructive-foreground: 64.91% 0.196 0.89; /* #E84D88 */
+    --border: 22.32% 0.002 17.27; /* #1C1B1B */
+    --input: 0% 0 0; /* #000000 */
+    --ring: 54.75% 0.112 71.39; /* #996410 */
+    --radius: 0.5rem; /* 8px */
   }
+}
 
-  *,
-  *::before,
-  *::after {
-    @apply box-border p-0 m-0;
+@layer base {
+  * {
+    @apply border-border text-foreground;
   }
-
-  *:focus {
-    @apply outline-none;
-  }
-
-  a {
-    @apply text-inherit no-underline;
-  }
-
-  p {
-    @apply md:text-lg;
-  }
-
-  h1 {
-    @apply font-primary text-5xl md:text-8xl leading-tight md:leading-tight;
-  }
-
-  h2 {
-    @apply h2;
-  }
-
-  h3 {
-    @apply font-secondary-bold text-2xl md:text-4xl;
-  }
-
-  h4 {
-    @apply font-secondary-bold text-xl md:text-3xl;
-  }
-
-  /* Primary Font - Rale Grotesk */
-
-  @font-face {
-    font-family: Primary;
-    src: url('../../public/fonts/primary/RaleGrotesk.ttf');
-    font-display: swap;
-  }
-
-  /* Secondary Font - Lato */
-
-  @font-face {
-    font-family: Secondary light;
-    src: url(../../public/fonts/secondary/light.ttf);
-  }
-
-  @font-face {
-    font-family: Secondary regular;
-    src: url(../../public/fonts/secondary/regular.ttf);
-  }
-
-  @font-face {
-    font-family: Secondary bold;
-    src: url(../../public/fonts/secondary/bold.ttf);
-  }
-
-  @font-face {
-    font-family: Secondary black;
-    src: url(../../public/fonts/secondary/black.ttf);
-  }
-
-  /* Interactivity */
 
   ::-webkit-scrollbar {
-    @apply h-3 w-1.5 bg-secondary/60;
+    @apply h-1.5 w-1.5 bg-primary/40;
   }
 
   ::-webkit-scrollbar-thumb {
-    @apply bg-secondary;
-    -webkit-border-radius: 1ex;
+    @apply bg-primary rounded-[1ex];
   }
 
   ::-webkit-scrollbar-corner {
-    @appky bg-secondary;
+    @apply bg-primary;
   }
 }
 
 @layer utilities {
-  /* Spacing */
-
-  .pt-section {
-    @apply pt-24;
-  }
-
-  .pb-section {
-    @apply pb-24;
-  }
-
-  .py-section {
-    @apply pt-section pb-section;
-  }
-
-  .pr-section {
-    @apply pr-5%;
-  }
-
-  .pl-section {
-    @apply pl-5%;
-  }
-
-  .px-section {
-    @apply pr-section pl-section;
-  }
-
-  .p-section {
-    @apply px-section py-section;
-  }
-
   /* Typography */
 
-  .h2s {
-    @apply font-secondary-bold text-4xl md:text-8xl leading-tight md:leading-snug tracking-wide;
+  .text-h1 {
+    @apply text-[clamp(2rem,calc(3dvw+1rem),3rem)] font-primary font-bold leading-none;
   }
 
-  .h2 {
-    @apply font-secondary-bold text-3xl md:text-5xl leading-tight md:leading-tight;
+  .text-h2 {
+    @apply text-[clamp(1.8rem,2.6dvw+1rem,2.5rem)] font-medium;
   }
 
-  .text-gradient-base {
-    @apply py-1 text-transparent bg-clip-text bg-gradient-to-r;
+  .text-h3 {
+    @apply text-[clamp(1.2rem,1.8dvw+1rem,2rem)] font-medium;
   }
 
-  .text-gradient {
-    @apply text-gradient-base from-secondary to-primary;
+  .text-p1 {
+    @apply text-[clamp(0.8rem,1dvw+0.5rem,1.2rem)];
   }
 
-  .text-gradient-light {
-    @apply text-gradient-base from-stone-100 via-white to-white;
+  .text-p2 {
+    @apply sm:text-lg lg:text-xl;
   }
 
-  .text-gradient-dark {
-    @apply text-gradient-base from-secondary to-stone-700;
+  .text-p3 {
+    @apply text-sm sm:text-base lg:text-lg;
   }
 
-  .text-tagline {
-    @apply font-secondary-bold text-sm md:text-base text-secondary;
-  }
-
-  /* Background */
+  /* Spacing */
   
-  .bg-base {
-    @apply bg-cover bg-center bg-no-repeat;
+  .container {
+    @apply max-w-7xl mx-auto;
   }
 
-  .bg-gradient {
-    @apply bg-gradient-to-r from-secondary to-primary;
+  .container-lg {
+    @apply max-w-8xl mx-auto;
   }
-}
-
-@layer components {
-  /* Input */
-
-  .btn {
-    @apply max-w-fit px-8 py-5 font-secondary-bold text-lg text-center leading-none whitespace-nowrap rounded-sm;
-  }
-
-  .btn__primary {
-    @apply text-white bg-secondary;
-  }
-
-  .btn__secondary {
-    @apply text-secondary bg-white;
+  
+  .px {
+    @apply px-4 sm:px-6;
   }
 }

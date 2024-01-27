@@ -1,76 +1,64 @@
-// Components
-import Footer from '@/components/sections/Footer'
-import Navbar from '@/components/navigation/Navbar'
-import Loading from './loading'
-import ScrollProgressBar from '@/components/feedback/ScrollProgressBar'
-import { Suspense } from 'react'
-// Scripts
-import GoogleSearchScript from '@/components/app/GoogleSearchScript'
-import GoogleAnalyticsScript from '@/components/app/GoogleAnalyticsScript'
-// Config
-import {
-  description,
-  keywords,
-  authors,
-  baseUrl,
-  themeColor,
-  organization
-} from '@/modules/app/config'
-// Types
-import type { Metadata } from 'next'
-import type { Parent } from '@/types/layout'
-// Styles
+import React from 'react'
+import { type Metadata, type Viewport } from 'next'
+import { TailwindIndicator } from '@/components/tailwind-indicator'
+import ThemeProvider from '@/components/layouts/theme-provider'
+import { Toaster } from '@/components/ui/toaster'
+import GoogleSearchScript from '@/components/layouts/google-seacrch-script'
+import { cn } from '@/lib/utils'
+import { fontPrimary, fontSecondary } from '@/lib/fonts'
+import { services } from '@/config/services'
+import { siteConfig } from '@/config/site'
 import './globals.css'
 
-/** The main head metadata configuration */
 export const metadata: Metadata = {
+  metadataBase: new URL(siteConfig.url),
   title: {
-    default: organization,
-    template: `%s – ${organization}`
+    default: `${siteConfig.name} – ${siteConfig.slogan}`,
+    template: `${siteConfig.name} – %s`
   },
-  description,
-  keywords,
-  applicationName: organization,
-  metadataBase: baseUrl,
-  authors,
-  creator: authors.name,
-  publisher: authors.name,
-  generator: 'Next.js',
+  description: siteConfig.description,
+  keywords: [
+    siteConfig.name,
+    ...services.items.map(({ title }) => title)
+  ],
+  authors: siteConfig.author,
+  creator: siteConfig.author.name,
+  publisher: siteConfig.author.name,
+  applicationName: siteConfig.name,
+  generator: 'Next.js 13',
   robots: 'index, follow',
   openGraph: {
-    title: organization,
-    description,
-    url: baseUrl,
-    siteName: organization,
-    locale: 'es-MX',
-    type: 'website'
-  },
-  themeColor,
-  formatDetection: {
-    email: false,
-    address: false,
-    telephone: false
+    type: 'website',
+    locale: 'es_MX',
+    url: siteConfig.url,
+    title: siteConfig.name,
+    description: siteConfig.description,
+    siteName: siteConfig.name
   }
 }
 
-/**
- * The root layout component of the application
- * @see {@link Parent} for props specification
- * @param Parent The component props
- * @returns The RootLayout component
- */
-export default function RootLayout ({ children }: Parent) {
+export const viewport: Viewport = {
+  width: 'device-width',
+  userScalable: true,
+  initialScale: 1,
+  maximumScale: 5,
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#ffffff' },
+    { media: '(prefers-color-scheme: dark)', color: '#ffffff' }
+  ],
+  colorScheme: 'only light'
+}
+
+export default function RootLayout ({ children }: React.PropsWithChildren) {
   return (
-    <html lang='es-MX'>
-      <body>
-        <ScrollProgressBar />
-        <Suspense fallback={<Loading />}>
-          <Navbar />
+    <html lang='es' suppressHydrationWarning>
+      <body className={cn(fontPrimary.variable, fontSecondary.variable, 'font-secondary bg-background min-h-screen antialiased !scroll-smooth select-none')}>
+        <ThemeProvider attribute='class' defaultTheme='dark'>
           {children}
-          <Footer />
-          <GoogleSearchScript />
-          <GoogleAnalyticsScript />
-        </Suspense>
+          <Toaster />
+          <TailwindIndicator />
+        </ThemeProvider>
+        <GoogleSearchScript />
       </body>
     </html>
   )
