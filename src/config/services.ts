@@ -1,7 +1,7 @@
 import { type Category } from '@/types'
 
 export const services: Category = {
-  title: 'Nuestras servicios',
+  title: 'Nuestros servicios',
   description: 'Nuestra selección diversa de productos de primera categoría nos permite el impacto positivo en cada interacción comercial.',
   items: [
     {
